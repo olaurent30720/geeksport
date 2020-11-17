@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  background-color: #66bb6a;
+  color: white;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 30px;
+}
+.exercice1 {
+  display: flex;
+}
+.exercice {
+  flex-direction: column;
+  width: 100vw;
+  height: 60vh;
+  text-align: center;
+  justify-content: center;
+}
+.exercice2 {
+  display: none;
+}
+.exercice3 {
+  display: none;
+}
+.exercice4 {
+  display: none;
+}
+.exercice5 {
+  display: none;
+}
+.exercice6 {
+  display: none;
+}
+.exercice7 {
+  display: none;
+}
+.exercice8 {
+  display: none;
+}
+.exercice9 {
+  display: none;
+}
+.exercice10 {
+  display: none;
+}
+.exercice11 {
+  display: none;
+}
+.exercice12 {
+  display: none;
+}
+.exercice13 {
+  display: none;
+}
+#pause {
+  display: none;
+}
+img {
+  height: 50%;
+}
+h1 {
+  margin-bottom: 10px;
+}
+#timer {
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.pausebtndiv {
+  display: flex;
+  width: 100vw;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#playpause {
+  background-color: chocolate; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.retourbtndiv {
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+#retour {
+    background-color: chocolate; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+#fin {
+    display: none;
+}

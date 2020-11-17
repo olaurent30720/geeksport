@@ -4,7 +4,7 @@ var ex = 1;
 
 var elem = document.getElementById("timer");
 
-var timerId = setInterval(countdown, 1000);
+var timerId = setInterval(countdown, 1);
 
 function countdown() {
   if (timeLeft == -1) {
@@ -37,14 +37,14 @@ function pageswitch() {
   if (ex < 13) {
   ex++;
   document.getElementById("pause").style.display = "none";
-  document.getElementById(ex).style.display = "block";
+  document.getElementById(ex).style.display = "flex";
   timeLeft = 5;
   timePause = 2;
   }
   else if (ex == 13) {
     document.getElementById(ex).style.display = "none";
     document.getElementById("fin").style.display = "block";
-    document.getElementById("btnpause").style.display = "none";
+    document.getElementById("playpause").style.display = "none";
     document.getElementById("timer").style.display = "none";
     document.getElementById("pause").style.display = "none";
   }
@@ -52,14 +52,14 @@ function pageswitch() {
 }
 
 var pause = false;
-var btnPause = document.getElementById("btnpause");
+var btnPause = document.getElementById("playpause");
 
-document.getElementById("btnpause").addEventListener("click", function () {
+document.getElementById("playpause").addEventListener("click", function () {
   if (pause == false) {
-    btnPause.innerHTML = "Reprendre";
+    btnPause.innerHTML = "REPRENDRE";
     pause = true;
   } else {
-    btnPause.innerHTML = "Pause";
+    btnPause.innerHTML = "PAUSE";
     pause = false;
   }
 });
