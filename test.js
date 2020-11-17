@@ -1,10 +1,10 @@
-var timeLeft = 5;
-var timePause = 2;
+var timeLeft = 30;
+var timePause = 10;
 var ex = 1;
 
 var elem = document.getElementById("timer");
 
-var timerId = setInterval(countdown, 1);
+var timerId = setInterval(countdown, 1000);
 
 function countdown() {
   if (timeLeft == -1) {
@@ -38,8 +38,8 @@ function pageswitch() {
   ex++;
   document.getElementById("pause").style.display = "none";
   document.getElementById(ex).style.display = "flex";
-  timeLeft = 5;
-  timePause = 2;
+  timeLeft = 30;
+  timePause = 10;
   }
   else if (ex == 13) {
     document.getElementById(ex).style.display = "none";
